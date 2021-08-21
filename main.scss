@@ -1,0 +1,500 @@
+@import 'base/base';
+@import 'base/mixins';
+@import 'base/variables';
+body{
+    width: 75.8%;
+    margin: 0 auto;
+}
+header{
+    height: 560px;
+    background-image: url(images/Background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+main{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 35px;
+    &-text{
+        font-family: 'Montserrat-bold';
+        font-size: 16px;
+        color: $color_text;
+        font-weight: bold;
+        margin-left: 200px;
+    }
+    &-ident{
+        width: 30%;
+        height: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        font-family: 'Montserrat-Regular';
+        font-size: 16px;
+        color: $color_text;
+        &-log{
+           padding: 0 10px;
+        }
+        &-sign{
+            border-radius: 50px;
+            border: 2px solid $color_text;
+            padding: 0 10px;
+        }
+    }
+}
+.nazva{
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    &-zagol{
+        font-family: 'Montserrat-bold';
+        font-size: 40px;
+        color: $color_text;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-text{
+        padding: 15px;
+        font-family: 'Roboto-Light';
+        font-size: 18px;
+        color: $color_text;
+    }
+    &-button{
+        background-color: $color_button;
+        font-family: 'Montserrat-bold';
+        border: none;
+        border-radius: 50px;
+        font-size: 12px;
+        color: $color_text;
+        padding: 10px;
+    }
+}
+.block1{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    &-nazv{
+        width: 100%;
+        font-family: 'Montserrat-bold';
+        font-size: 20px;
+        text-align: center;
+        margin: 40px 0 30px;
+    }
+    &-step{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        &-foto-1, &-foto-2, &-foto-3{
+            width: 30%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        &-foto-1{
+            background-image: url(images/Step1.png);
+        }
+        &-foto-2{
+            background-image: url(images/Step2.png);
+        }
+        &-foto-3{
+            background-image: url(images/Step3.png);
+        }
+    }
+    &-button2{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        &-nazva{
+            width: 30%;
+            font-family: 'Montserrat-bold';
+            border: 2px solid $color_button;
+            border-radius: 50px;
+            font-size: 12px;
+            color: $color_button;
+            padding: 8px;
+        }
+    }
+    &-ideas{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 250px 250px 250px;
+        column-gap: 10px;  
+        row-gap: 10px;
+        margin: auto;
+        &-text{
+            height: 250px;
+            text-align: center;
+            font-family: 'Montserrat-bold';
+            color: white;
+            font-size: 22px;
+            padding-top: 100px;
+        }
+        &-sports, &-wellness, &-extreme, &-games, &-culture, &-enjomet, &-treveling{
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        &-sports{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-image: url(images/Sport.png);
+        }
+        &-wellness{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-image: url(images/Healath.png);
+        }
+        &-extreme{
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            background-image: url(images/Extreme.png);
+        }
+        &-games{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-image: url(images/Games.png);
+        }
+        &-culture{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-image: url(images/Culture.png);
+        }
+        &-enjomet{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-image: url(images/enjomet.png);
+        }
+        &-treveling{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-image: url(images/travel.png);
+        }
+    }
+    &-hi{
+        font-family: 'Roboto-Light';
+        font-size: 14px;
+        color: #666666;
+    }
+    &-search{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 10px;
+        &-input{
+            width: 40%;
+            color: #999999;
+            font-family: 'Roboto-Light';
+            font-size: 12px;
+            margin-right: 10px;    
+            padding: 10px;     
+        }
+    }
+}
+.block1-parther{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 224px;
+    column-gap: 10px;
+    &-foto1, &-foto2, &-foto3, &-foto4{
+        height: 90px;
+        width: 60%;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    &-foto1{
+        background-image: url(images/Avatar.png);
+    }
+    &-foto2{
+        background-image: url(images/Avatar1.png);
+    } 
+    &-foto3{
+        background-image: url(images/Avatar2.png);
+    } 
+    &-foto4{
+        background-image: url(images/Avatar3.png);
+    }
+    &-name{
+        text-align: center;
+        font-family: 'Montserrat-bold';
+        font-size: 12px;
+        padding: 10px;
+    }
+    &-dani{
+        text-align: center;
+        font-family: 'Roboto-Light';
+        color: #666666;
+        font-size: 11px;
+    }
+    &-hunter{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    &-bennet{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    &-wells{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    &-pierce{
+        grid-column-start: 4;
+        grid-column-end: 4;
+    }
+}
+footer{
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 50px auto 0;
+}
+.fotter-col-dream, .fotter-col-company, .fotter-col-partners, .fotter-col-areto{
+    width: 25%;
+    padding: 20px;
+    font-family: 'Montserrat-bold';
+    font-size: 14px;
+}
+.fotter-col-dream{
+    font-family: 'Montserrat-Regular';
+    font-size: 18px;
+    color: $color_button;
+}
+.fotter-col-company{
+    display: flex;
+    flex-flow: column wrap;
+    &-table{
+    font-family: 'Montserrat-bold'; 
+    font-size: 10px;
+    color: $color_footer;
+    padding: 10px;
+    text-align: left;
+}
+}
+.fotter-col-areto{
+    font-size: 10px;
+    color: $color_footer;
+    font-family: 'Montserrat-bold';
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) and (min-width:301px){
+    header{
+        height: 700px;
+    }
+    body{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    .logo{
+        height: 0;
+        margin: 0 auto;
+        padding-top: 15px;
+        &-text{
+            font-size: 12px;
+            margin-left: 50px;
+        }
+        &-ident{
+            width: 30%;
+            height: 20px;
+            font-size: 12px;
+            &-log{
+                padding: 0 10px;
+            }
+            &-sign{
+                padding: 0 10px;
+            }
+        }
+    }
+    .nazva{
+        width: 45%;
+        margin: 260px auto;
+        &-zagol{
+            font-size: 30px;
+        }
+        &-text{
+            padding: 5px;
+            font-size: 14px;
+        }
+        &-button{
+            font-size: 10px;
+            padding: 5px;
+        }
+    }
+    .block1-parther{
+        width: 60%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 205px 205px;
+        margin: 40px auto;
+        &-hunter{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        &-bennet{
+            grid-column-start: 2;
+            grid-column-end: 2;
+        }
+        &-wells{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        &-pierce{
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+    }
+    footer{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 300px){
+    header{
+        height: 540px;
+    }
+    body{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    .block1{
+        &-nazv{
+            font-size: 16px;
+        }
+        font-size: 18px;
+        &-step{
+            height: 800px;
+            margin-top: 0;
+            &-foto-1, &-foto-2, &-foto-3{
+                width: 300px;
+                height: 240px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                margin: 0 auto;
+            }
+        }
+        &-ideas{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &-sports, &-wellness, &-extreme, &-games, &-culture, &-enjomet, &-treveling{
+                height: 120px;
+            }
+            &-text{
+                padding-top: 40px;
+            }
+        }
+        &-search{
+            flex-flow: column wrap;
+            padding: 10px;
+            &-input{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .logo{
+        height: 0;
+        margin: 0 auto;
+        padding-top: 5px;
+        &-text{
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        &-ident{
+            width: 50%;
+            height: 20px;
+            font-size: 10px;
+            &-log{
+                padding: 0 10px;
+            }
+            &-sign{
+                padding: 0 10px;
+            }
+        }
+    }
+    .nazva{
+        width: 70%;
+        margin: 200px auto;
+        font-size: 16px;
+        &-zagol{
+            font-size: 20px;
+        }
+        &-text{
+            padding: 25px 0;
+            font-size: 12px;
+        }
+        &-button{
+            font-size: 10px;
+            padding: 15px;
+        }
+    }
+    .block1-parther{
+        width: 60%;
+        grid-template-columns: 100%;
+        grid-template-rows: 205px 205px 205px 205px;
+        margin: 0 auto;
+        &-hunter{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+        &-bennet{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        &-wells{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        &-pierce{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 4;
+            grid-row-end: 4;
+        }
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
